@@ -361,6 +361,884 @@
     "question": "Which word refers to 'a good and trusting relationship'?",
     "options": ["rapport", "highlight", "bargain", "accomplishment"],
     "answer": "rapport"
+  },
+
+
+  {
+    "unit": "Unit 10",
+    "question": "Which word means 'the visual and verbal elements that define how a brand is perceived'?",
+    "options": ["influencer", "brand identity", "loyalty", "slogan"],
+    "answer": "brand identity"
+  },
+  {
+    "unit": "Unit 10",
+    "question": "Which word refers to the person responsible for a company’s branding strategy?",
+    "options": ["brand manager", "market segmentation", "awareness", "positioning"],
+    "answer": "brand manager"
+  },
+  {
+    "unit": "Unit 10",
+    "question": "Which term means 'dividing a market into distinct groups of buyers'?",
+    "options": ["slogan", "market segmentation", "landing page", "brand identity"],
+    "answer": "market segmentation"
+  },
+  {
+    "unit": "Unit 10",
+    "question": "Which word refers to 'how a brand or product is placed in the minds of consumers'?",
+    "options": ["positioning", "loyalty", "awareness", "influencer"],
+    "answer": "positioning"
+  },
+  {
+    "unit": "Unit 10",
+    "question": "Which term refers to a brand's main competitive advantage?",
+    "options": ["unique selling point (USP)", "landing page", "loyalty", "market segmentation"],
+    "answer": "unique selling point (USP)"
+  },
+  {
+    "unit": "Unit 10",
+    "question": "Which word means 'the extent to which people recognize a brand'?",
+    "options": ["loyalty", "awareness", "slogan", "influencer"],
+    "answer": "awareness"
+  },
+  {
+    "unit": "Unit 10",
+    "question": "Which word means 'a customer’s preference to continue buying from a brand'?",
+    "options": ["slogan", "loyalty", "USP", "positioning"],
+    "answer": "loyalty"
+  },
+  {
+    "unit": "Unit 10",
+    "question": "Which word refers to a short phrase that represents a brand’s core message?",
+    "options": ["tagline", "influencer", "brand manager", "segmentation"],
+    "answer": "tagline"
+  },
+  {
+    "unit": "Unit 10",
+    "question": "Which word means 'a person who affects others’ buying decisions through social media'?",
+    "options": ["positioning", "influencer", "loyalty", "tagline"],
+    "answer": "influencer"
+  },
+  {
+    "unit": "Unit 10",
+    "question": "Which word refers to a web page created for a specific marketing campaign?",
+    "options": ["landing page", "brand manager", "awareness", "influencer"],
+    "answer": "landing page"
+  },
+
+  
+  {
+    "unit": "Unit 10",
+    "question": "What is the purpose of having a strong brand identity?",
+    "options": [
+      "To confuse competitors",
+      "To recognize your product instantly",
+      "To lower advertising costs",
+      "To target all customers equally"
+    ],
+    "answer": "To recognize your product instantly"
+  },
+  {
+    "unit": "Unit 10",
+    "question": "What does a brand manager do?",
+    "options": [
+      "Handles the company’s finances",
+      "Oversees all branding activities",
+      "Designs the product packaging only",
+      "Manages employee salaries"
+    ],
+    "answer": "Oversees all branding activities"
+  },
+  {
+    "unit": "Unit 10",
+    "question": "Why do businesses use market segmentation?",
+    "options": [
+      "To reduce production costs",
+      "To target specific consumer groups effectively",
+      "To confuse competitors",
+      "To broaden their target market randomly"
+    ],
+    "answer": "To target specific consumer groups effectively"
+  },
+  {
+    "unit": "Unit 10",
+    "question": "What does effective positioning do?",
+    "options": [
+      "Makes your product stand out",
+      "Reduces your production time",
+      "Lowers employee turnover",
+      "Increases customer complaints"
+    ],
+    "answer": "Makes your product stand out"
+  },
+  {
+    "unit": "Unit 10",
+    "question": "Why is identifying your USP important?",
+    "options": [
+      "It increases warehouse storage",
+      "It improves team communication",
+      "It helps create stronger marketing messages",
+      "It reduces the number of meetings"
+    ],
+    "answer": "It helps create stronger marketing messages"
+  },
+  {
+    "unit": "Unit 10",
+    "question": "Why is brand awareness important for startups?",
+    "options": [
+      "It saves on product development",
+      "It builds early recognition and interest",
+      "It lowers taxes",
+      "It improves employee performance"
+    ],
+    "answer": "It builds early recognition and interest"
+  },
+  {
+    "unit": "Unit 10",
+    "question": "Why is customer loyalty valuable to businesses?",
+    "options": [
+      "It leads to repeat purchases and referrals",
+      "It reduces advertising entirely",
+      "It avoids customer feedback",
+      "It delays product launches"
+    ],
+    "answer": "It leads to repeat purchases and referrals"
+  },
+  {
+    "unit": "Unit 10",
+    "question": "How can a slogan or tagline help your brand?",
+    "options": [
+      "It hides your product’s features",
+      "It reinforces your brand message",
+      "It reduces customer satisfaction",
+      "It avoids customer interaction"
+    ],
+    "answer": "It reinforces your brand message"
+  },
+  {
+    "unit": "Unit 10",
+    "question": "Why do brands collaborate with influencers?",
+    "options": [
+      "To increase product visibility",
+      "To reduce product quality",
+      "To delay product launches",
+      "To avoid customer attention"
+    ],
+    "answer": "To increase product visibility"
+  },
+  {
+    "unit": "Unit 10",
+    "question": "How can a landing page help a marketing campaign?",
+    "options": [
+      "By redirecting users to unrelated sites",
+      "By boosting conversions through targeted content",
+      "By replacing customer service",
+      "By collecting employee data"
+    ],
+    "answer": "By boosting conversions through targeted content"
+  },
+
+
+
+  {
+    "unit": "Unit 11",
+    "question": "Which word means 'the total income generated by a business before expenses'?",
+    "options": ["net income", "expense", "revenue", "equity"],
+    "answer": "revenue"
+  },
+  {
+    "unit": "Unit 11",
+    "question": "Which word means 'the cost required for something, typically money spent in business'?",
+    "options": ["revenue", "liquidity", "expense", "gross margin"],
+    "answer": "expense"
+  },
+  {
+    "unit": "Unit 11",
+    "question": "Which word refers to 'the amount of profit left after all expenses have been deducted'?",
+    "options": ["net income", "cash reserve", "liability", "gross margin"],
+    "answer": "net income"
+  },
+  {
+    "unit": "Unit 11",
+    "question": "Which word refers to 'a company’s legal debt or financial obligation'?",
+    "options": ["liability", "equity", "revenue", "operating expenses"],
+    "answer": "liability"
+  },
+  {
+    "unit": "Unit 11",
+    "question": "Which term means 'the value of shares issued by a company or owner’s interest'?",
+    "options": ["liability", "equity", "revenue", "gross margin"],
+    "answer": "equity"
+  },
+  {
+    "unit": "Unit 11",
+    "question": "Which word refers to 'money saved for future or emergency use by a business'?",
+    "options": ["net income", "cash reserve", "expense", "equity"],
+    "answer": "cash reserve"
+  },
+  {
+    "unit": "Unit 11",
+    "question": "Which word refers to 'the difference between sales and cost of goods sold'?",
+    "options": ["gross margin", "liability", "revenue", "expense"],
+    "answer": "gross margin"
+  },
+  {
+    "unit": "Unit 11",
+    "question": "Which word refers to 'ongoing costs a company incurs to run its business'?",
+    "options": ["operating expenses", "cash reserve", "liability", "revenue"],
+    "answer": "operating expenses"
+  },
+  {
+    "unit": "Unit 11",
+    "question": "Which phrase describes 'a measure of a company’s financial leverage'?",
+    "options": ["gross margin", "net income", "debt-to-equity ratio", "liquidity"],
+    "answer": "debt-to-equity ratio"
+  },
+  {
+    "unit": "Unit 11",
+    "question": "Which word refers to 'a company’s ability to meet short-term financial obligations'?",
+    "options": ["liquidity", "liability", "revenue", "equity"],
+    "answer": "liquidity"
+  },
+
+
+
+  {
+    "unit": "Unit 11",
+    "question": "What caused the company’s revenue to increase?",
+    "options": [
+      "A new marketing campaign",
+      "A drop in product quality",
+      "Higher expenses",
+      "Fewer sales"
+    ],
+    "answer": "A new marketing campaign"
+  },
+  {
+    "unit": "Unit 11",
+    "question": "Why do companies monitor their expenses?",
+    "options": [
+      "To reduce customer complaints",
+      "To maintain profitability",
+      "To increase liabilities",
+      "To expand their equity"
+    ],
+    "answer": "To maintain profitability"
+  },
+  {
+    "unit": "Unit 11",
+    "question": "What does a higher net income suggest about a company?",
+    "options": [
+      "It lost money",
+      "It is profitable",
+      "It raised its debt level",
+      "It increased liabilities"
+    ],
+    "answer": "It is profitable"
+  },
+  {
+    "unit": "Unit 11",
+    "question": "What effect does taking a loan have on a company?",
+    "options": [
+      "It increases liabilities",
+      "It decreases expenses",
+      "It boosts gross margin",
+      "It improves liquidity"
+    ],
+    "answer": "It increases liabilities"
+  },
+  {
+    "unit": "Unit 11",
+    "question": "What happens when a company issues new shares?",
+    "options": [
+      "It lowers revenue",
+      "It increases equity",
+      "It raises expenses",
+      "It decreases liquidity"
+    ],
+    "answer": "It increases equity"
+  },
+  {
+    "unit": "Unit 11",
+    "question": "Why is it important to maintain a cash reserve?",
+    "options": [
+      "To avoid gross margin calculations",
+      "To handle unexpected costs",
+      "To reduce operating expenses",
+      "To decrease liabilities"
+    ],
+    "answer": "To handle unexpected costs"
+  },
+  {
+    "unit": "Unit 11",
+    "question": "What can improving gross margin lead to?",
+    "options": [
+      "Higher equity costs",
+      "Lower expenses",
+      "Increased profitability",
+      "Reduced cash flow"
+    ],
+    "answer": "Increased profitability"
+  },
+  {
+    "unit": "Unit 11",
+    "question": "What is the goal of tracking operating expenses?",
+    "options": [
+      "To ensure liquidity drops",
+      "To stay within budget",
+      "To increase liabilities",
+      "To calculate net income"
+    ],
+    "answer": "To stay within budget"
+  },
+  {
+    "unit": "Unit 11",
+    "question": "What could a high debt-to-equity ratio indicate?",
+    "options": [
+      "Low profitability",
+      "Strong sales performance",
+      "Financial risk",
+      "High liquidity"
+    ],
+    "answer": "Financial risk"
+  },
+  {
+    "unit": "Unit 11",
+    "question": "Why is liquidity important to a business?",
+    "options": [
+      "It reduces expenses",
+      "It helps pay short-term obligations",
+      "It increases liabilities",
+      "It grows equity rapidly"
+    ],
+    "answer": "It helps pay short-term obligations"
+  },
+
+
+  
+  {
+    "unit": "Unit 12",
+    "question": "Which word means 'customary code of polite behavior in society or among professionals'?",
+    "options": ["etiquette", "formality", "adaptability", "punctuality"],
+    "answer": "etiquette"
+  },
+  {
+    "unit": "Unit 12",
+    "question": "Which phrase means 'looking into someone's eyes during communication'?",
+    "options": ["rapport", "gesture", "eye contact", "etiquette"],
+    "answer": "eye contact"
+  },
+  {
+    "unit": "Unit 12",
+    "question": "Which word refers to 'the quality of being on time'?",
+    "options": ["punctuality", "harmony", "adaptability", "formality"],
+    "answer": "punctuality"
+  },
+  {
+    "unit": "Unit 12",
+    "question": "Which adjective describes 'not direct in expression or approach'?",
+    "options": ["punctual", "indirect", "formal", "adaptive"],
+    "answer": "indirect"
+  },
+  {
+    "unit": "Unit 12",
+    "question": "Which word means 'a peaceful and cooperative state or relationship'?",
+    "options": ["eye contact", "etiquette", "harmony", "gesture"],
+    "answer": "harmony"
+  },
+  {
+    "unit": "Unit 12",
+    "question": "Which phrase refers to 'a small card with business details'?",
+    "options": ["gesture", "rapport", "business card", "formality"],
+    "answer": "business card"
+  },
+  {
+    "unit": "Unit 12",
+    "question": "Which word means 'the degree of seriousness and ceremony in behavior or speech'?",
+    "options": ["formality", "etiquette", "harmony", "eye contact"],
+    "answer": "formality"
+  },
+  {
+    "unit": "Unit 12",
+    "question": "Which word means 'the ability to adjust to new conditions'?",
+    "options": ["punctuality", "adaptability", "indirect", "rapport"],
+    "answer": "adaptability"
+  },
+  {
+    "unit": "Unit 12",
+    "question": "Which word means 'a movement of part of the body to express an idea or meaning'?",
+    "options": ["gesture", "harmony", "formality", "eye contact"],
+    "answer": "gesture"
+  },
+  {
+    "unit": "Unit 12",
+    "question": "Which word means 'a close and harmonious relationship'?",
+    "options": ["rapport", "adaptability", "gesture", "etiquette"],
+    "answer": "rapport"
+  },
+
+
+
+  {
+    "unit": "Unit 12",
+    "question": "Why is understanding etiquette important in international business?",
+    "options": [
+      "It prevents financial loss",
+      "It helps avoid cultural misunderstandings",
+      "It improves accounting accuracy",
+      "It ensures legal compliance"
+    ],
+    "answer": "It helps avoid cultural misunderstandings"
+  },
+  {
+    "unit": "Unit 12",
+    "question": "What does eye contact usually signal in Western cultures?",
+    "options": [
+      "Disrespect and aggression",
+      "Boredom and disinterest",
+      "Honesty and confidence",
+      "Uncertainty and fear"
+    ],
+    "answer": "Honesty and confidence"
+  },
+  {
+    "unit": "Unit 12",
+    "question": "Why is punctuality valued in many cultures?",
+    "options": [
+      "It helps people relax",
+      "It shows respect for others’ time",
+      "It encourages casual conversations",
+      "It avoids paperwork"
+    ],
+    "answer": "It shows respect for others’ time"
+  },
+  {
+    "unit": "Unit 12",
+    "question": "Why do some cultures prefer indirect communication?",
+    "options": [
+      "To save time",
+      "To avoid causing offense",
+      "To appear more confident",
+      "To give direct orders"
+    ],
+    "answer": "To avoid causing offense"
+  },
+  {
+    "unit": "Unit 12",
+    "question": "Why is harmony important in group-oriented cultures?",
+    "options": [
+      "It lowers costs",
+      "It increases competition",
+      "It supports group cohesion",
+      "It allows more arguments"
+    ],
+    "answer": "It supports group cohesion"
+  },
+  {
+    "unit": "Unit 12",
+    "question": "How should a business card be presented in some Asian cultures?",
+    "options": [
+      "With one hand",
+      "With no eye contact",
+      "With both hands",
+      "After a handshake"
+    ],
+    "answer": "With both hands"
+  },
+  {
+    "unit": "Unit 12",
+    "question": "How does formality vary in business contexts?",
+    "options": [
+      "It never changes",
+      "It’s higher in informal events",
+      "It depends on the type of meeting",
+      "It only applies in emails"
+    ],
+    "answer": "It depends on the type of meeting"
+  },
+  {
+    "unit": "Unit 12",
+    "question": "Why is adaptability important in cross-cultural settings?",
+    "options": [
+      "It limits cultural learning",
+      "It helps build stronger relationships",
+      "It avoids teamwork",
+      "It reduces flexibility"
+    ],
+    "answer": "It helps build stronger relationships"
+  },
+  {
+    "unit": "Unit 12",
+    "question": "Why should you be cautious with gestures across cultures?",
+    "options": [
+      "They can be too formal",
+      "They may be misinterpreted",
+      "They are not visible enough",
+      "They replace eye contact"
+    ],
+    "answer": "They may be misinterpreted"
+  },
+  {
+    "unit": "Unit 12",
+    "question": "What is the benefit of building rapport in a business relationship?",
+    "options": [
+      "It reduces income",
+      "It prevents misunderstandings",
+      "It increases formality",
+      "It avoids eye contact"
+    ],
+    "answer": "It prevents misunderstandings"
+  },
+
+
+
+  {
+    "unit": "Unit 13",
+    "question": "Which phrase refers to 'the boundaries and goals of a project'?",
+    "options": ["milestone", "project scope", "kick-off meeting", "timeline"],
+    "answer": "project scope"
+  },
+  {
+    "unit": "Unit 13",
+    "question": "Which word means 'any person or group that has an interest in a project'?",
+    "options": ["stakeholder", "deliverable", "status update", "timeline"],
+    "answer": "stakeholder"
+  },
+  {
+    "unit": "Unit 13",
+    "question": "Which word refers to 'a significant event or achievement in a project'?",
+    "options": ["milestone", "project scope", "resource allocation", "conflict resolution"],
+    "answer": "milestone"
+  },
+  {
+    "unit": "Unit 13",
+    "question": "Which word means 'a completed product or outcome submitted to a client'?",
+    "options": ["timeline", "deliverable", "kick-off meeting", "stand-up meeting"],
+    "answer": "deliverable"
+  },
+  {
+    "unit": "Unit 13",
+    "question": "Which phrase refers to 'the first formal meeting of a project team'?",
+    "options": ["kick-off meeting", "status update", "milestone", "project scope"],
+    "answer": "kick-off meeting"
+  },
+  {
+    "unit": "Unit 13",
+    "question": "Which word refers to 'a schedule that outlines project deadlines'?",
+    "options": ["timeline", "stand-up meeting", "stakeholder", "resource allocation"],
+    "answer": "timeline"
+  },
+  {
+    "unit": "Unit 13",
+    "question": "Which phrase means 'the process of assigning available assets and tools'?",
+    "options": ["conflict resolution", "timeline", "resource allocation", "milestone"],
+    "answer": "resource allocation"
+  },
+  {
+    "unit": "Unit 13",
+    "question": "Which phrase describes 'a brief team meeting held daily, usually standing up'?",
+    "options": ["status update", "kick-off meeting", "stand-up meeting", "project scope"],
+    "answer": "stand-up meeting"
+  },
+  {
+    "unit": "Unit 13",
+    "question": "Which phrase refers to 'a quick report on a project’s current progress'?",
+    "options": ["milestone", "deliverable", "status update", "resource allocation"],
+    "answer": "status update"
+  },
+  {
+    "unit": "Unit 13",
+    "question": "Which phrase means 'a process of resolving disagreements effectively'?",
+    "options": ["project scope", "conflict resolution", "stakeholder", "timeline"],
+    "answer": "conflict resolution"
+  },
+
+
+
+  {
+    "unit": "Unit 13",
+    "question": "Why is it important to define the project scope early?",
+    "options": [
+      "To avoid scope creep",
+      "To delay resource planning",
+      "To reduce team meetings",
+      "To change milestones"
+    ],
+    "answer": "To avoid scope creep"
+  },
+  {
+    "unit": "Unit 13",
+    "question": "Why should stakeholders be kept informed?",
+    "options": [
+      "To meet tight deadlines",
+      "To avoid team collaboration",
+      "To ensure project alignment",
+      "To finalize deliverables early"
+    ],
+    "answer": "To ensure project alignment"
+  },
+  {
+    "unit": "Unit 13",
+    "question": "What does completing a milestone usually indicate?",
+    "options": [
+      "That the project is canceled",
+      "That progress has been made",
+      "That meetings should stop",
+      "That a new stakeholder is added"
+    ],
+    "answer": "That progress has been made"
+  },
+  {
+    "unit": "Unit 13",
+    "question": "What is typically included as a deliverable?",
+    "options": [
+      "Meeting agenda",
+      "Budget spreadsheet",
+      "User manual and software",
+      "Team feedback"
+    ],
+    "answer": "User manual and software"
+  },
+  {
+    "unit": "Unit 13",
+    "question": "What happens in a kick-off meeting?",
+    "options": [
+      "Daily updates are shared",
+      "Conflicts are resolved",
+      "Project plans are introduced",
+      "Milestones are completed"
+    ],
+    "answer": "Project plans are introduced"
+  },
+  {
+    "unit": "Unit 13",
+    "question": "What does a timeline help you manage?",
+    "options": [
+      "Stakeholder feedback",
+      "Project deadlines",
+      "Team hierarchy",
+      "Meeting length"
+    ],
+    "answer": "Project deadlines"
+  },
+  {
+    "unit": "Unit 13",
+    "question": "Why is resource allocation important?",
+    "options": [
+      "To increase conflict",
+      "To stay within budget",
+      "To reduce quality",
+      "To remove timelines"
+    ],
+    "answer": "To stay within budget"
+  },
+  {
+    "unit": "Unit 13",
+    "question": "What is the purpose of a stand-up meeting?",
+    "options": [
+      "To write reports",
+      "To assign tasks to clients",
+      "To give quick updates",
+      "To define the scope"
+    ],
+    "answer": "To give quick updates"
+  },
+  {
+    "unit": "Unit 13",
+    "question": "When should a status update be requested?",
+    "options": [
+      "After project delivery",
+      "When milestones are unclear",
+      "During project progress",
+      "Before stakeholder meetings"
+    ],
+    "answer": "During project progress"
+  },
+  {
+    "unit": "Unit 13",
+    "question": "What is the goal of conflict resolution?",
+    "options": [
+      "To assign blame",
+      "To delay timelines",
+      "To maintain a positive team environment",
+      "To change project scope"
+    ],
+    "answer": "To maintain a positive team environment"
+  },
+
+
+
+  {
+    "unit": "Unit 14",
+    "question": "Which term refers to 'a short summary of a report’s main ideas'?",
+    "options": ["executive summary", "feasibility", "proposal", "rationale"],
+    "answer": "executive summary"
+  },
+  {
+    "unit": "Unit 14",
+    "question": "Which word means 'a formal plan or suggestion for consideration'?",
+    "options": ["supplement", "proposal", "formatting", "ROI"],
+    "answer": "proposal"
+  },
+  {
+    "unit": "Unit 14",
+    "question": "Which word means 'the reason or logic behind an idea or plan'?",
+    "options": ["feasibility", "rationale", "proposal", "competitor analysis"],
+    "answer": "rationale"
+  },
+  {
+    "unit": "Unit 14",
+    "question": "Which adjective means 'able to convince or influence others'?",
+    "options": ["persuasive", "feasible", "formal", "strategic"],
+    "answer": "persuasive"
+  },
+  {
+    "unit": "Unit 14",
+    "question": "Which phrase refers to 'an estimated calculation of project costs'?",
+    "options": ["ROI", "budget estimate", "executive summary", "formatting"],
+    "answer": "budget estimate"
+  },
+  {
+    "unit": "Unit 14",
+    "question": "Which abbreviation stands for 'Return on Investment'?",
+    "options": ["ROI", "FAQ", "CEO", "PDF"],
+    "answer": "ROI"
+  },
+  {
+    "unit": "Unit 14",
+    "question": "Which phrase means 'a review of your market rivals' strengths and weaknesses'?",
+    "options": ["proposal", "feasibility", "competitor analysis", "budget estimate"],
+    "answer": "competitor analysis"
+  },
+  {
+    "unit": "Unit 14",
+    "question": "Which word refers to 'the possibility of being achieved or done'?",
+    "options": ["feasibility", "formatting", "rationale", "supplement"],
+    "answer": "feasibility"
+  },
+  {
+    "unit": "Unit 14",
+    "question": "Which verb/noun means 'to add additional information or material'?",
+    "options": ["budget", "summarize", "supplement", "analyze"],
+    "answer": "supplement"
+  },
+  {
+    "unit": "Unit 14",
+    "question": "Which term refers to 'the arrangement and design of a document’s layout'?",
+    "options": ["persuasive", "executive summary", "formatting", "ROI"],
+    "answer": "formatting"
+  },
+
+
+  
+  {
+    "unit": "Unit 14",
+    "question": "What is the main function of an executive summary?",
+    "options": [
+      "To list all expenses",
+      "To present the report's detailed charts",
+      "To give a brief overview of the report",
+      "To explain formatting rules"
+    ],
+    "answer": "To give a brief overview of the report"
+  },
+  {
+    "unit": "Unit 14",
+    "question": "What is the purpose of a proposal?",
+    "options": [
+      "To revise the layout of a document",
+      "To summarize previous work",
+      "To suggest a plan for approval",
+      "To provide supplementary charts"
+    ],
+    "answer": "To suggest a plan for approval"
+  },
+  {
+    "unit": "Unit 14",
+    "question": "Why is it important to present a clear rationale?",
+    "options": [
+      "To confuse the stakeholders",
+      "To justify your recommendations",
+      "To lower the budget estimate",
+      "To improve formatting"
+    ],
+    "answer": "To justify your recommendations"
+  },
+  {
+    "unit": "Unit 14",
+    "question": "What makes a business proposal persuasive?",
+    "options": [
+      "Using long sentences",
+      "Including data and case studies",
+      "Removing technical terms",
+      "Skipping budget estimates"
+    ],
+    "answer": "Including data and case studies"
+  },
+  {
+    "unit": "Unit 14",
+    "question": "What should a budget estimate include?",
+    "options": [
+      "Only printing costs",
+      "Only advertising costs",
+      "All expected costs",
+      "Employee evaluations"
+    ],
+    "answer": "All expected costs"
+  },
+  {
+    "unit": "Unit 14",
+    "question": "Why is ROI important in a business plan?",
+    "options": [
+      "To compare executive summaries",
+      "To predict success in education",
+      "To show potential returns on investment",
+      "To estimate formatting costs"
+    ],
+    "answer": "To show potential returns on investment"
+  },
+  {
+    "unit": "Unit 14",
+    "question": "Why conduct a competitor analysis?",
+    "options": [
+      "To reduce formatting time",
+      "To identify market threats and opportunities",
+      "To summarize internal policies",
+      "To estimate production costs"
+    ],
+    "answer": "To identify market threats and opportunities"
+  },
+  {
+    "unit": "Unit 14",
+    "question": "What does feasibility help determine?",
+    "options": [
+      "If formatting is attractive",
+      "If a plan is possible or practical",
+      "If competitors are profitable",
+      "If the summary is complete"
+    ],
+    "answer": "If a plan is possible or practical"
+  },
+  {
+    "unit": "Unit 14",
+    "question": "What does it mean to supplement a report?",
+    "options": [
+      "To delete unnecessary sections",
+      "To replace formatting",
+      "To add extra charts or details",
+      "To shorten the executive summary"
+    ],
+    "answer": "To add extra charts or details"
+  },
+  {
+    "unit": "Unit 14",
+    "question": "Why is proper formatting important?",
+    "options": [
+      "To save money",
+      "To reduce proposal length",
+      "To make the document readable and professional",
+      "To increase ROI"
+    ],
+    "answer": "To make the document readable and professional"
   }
  
 ]
