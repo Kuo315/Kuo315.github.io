@@ -1,0 +1,366 @@
+[
+  {
+    "unit": "Unit 7",
+    "question": "The word 'accomplishment' refers to:",
+    "options": ["A task yet to be completed", "A minor issue", "An achievement or result", "An obstacle in a project"],
+    "answer": "An achievement or result"
+  },
+  {
+    "unit": "Unit 7",
+    "question": "What does the verb 'quantify' mean?",
+    "options": ["To describe with emotion", "To assign a numerical value", "To highlight visually", "To minimize something"],
+    "answer": "To assign a numerical value"
+  },
+  {
+    "unit": "Unit 7",
+    "question": "What does the verb 'complement' mean?",
+    "options": ["To criticize something", "To repeat information", "To go well together or enhance", "To delete from a document"],
+    "answer": "To go well together or enhance"
+  },
+  {
+    "unit": "Unit 7",
+    "question": "The word 'enthusiasm' refers to:",
+    "options": ["A sense of fear", "A lack of interest", "Strong excitement or passion", "A calm attitude"],
+    "answer": "Strong excitement or passion"
+  },
+  {
+    "unit": "Unit 7",
+    "question": "To 'highlight' something means to:",
+    "options": ["Ignore it", "Emphasize or make it stand out", "Cover it", "Remove it"],
+    "answer": "Emphasize or make it stand out"
+  },
+  {
+    "unit": "Unit 7",
+    "question": "A 'recruiter' is someone who:",
+    "options": ["Trains employees", "Manages schedules", "Hires candidates for jobs", "Cleans the office"],
+    "answer": "Hires candidates for jobs"
+  },
+  {
+    "unit": "Unit 7",
+    "question": "What does 'endorsement' mean?",
+    "options": ["A rejection", "A personal complaint", "A recommendation or approval", "An error in judgment"],
+    "answer": "A recommendation or approval"
+  },
+  {
+    "unit": "Unit 7",
+    "question": "What does 'credibility' refer to?",
+    "options": ["Trustworthiness or believability", "Fashion sense", "Physical strength", "A digital platform"],
+    "answer": "Trustworthiness or believability"
+  },
+  {
+    "unit": "Unit 7",
+    "question": "The word 'networking' involves:",
+    "options": ["Building connections for professional purposes", "Fixing internet issues", "Cleaning office spaces", "Sending formal complaints"],
+    "answer": "Building connections for professional purposes"
+  },
+  {
+    "unit": "Unit 7",
+    "question": "To 'leverage' something means to:",
+    "options": ["Avoid using it", "Misuse it", "Use it to your advantage", "Complain about it"],
+    "answer": "Use it to your advantage"
+  },
+
+
+
+  {
+    "unit": "Unit 7",
+    "question": "Which word means 'an achievement or result, especially one that is impressive'?",
+    "options": ["obstacle", "accomplishment", "highlight", "networking"],
+    "answer": "accomplishment"
+  },
+  {
+    "unit": "Unit 7",
+    "question": "Which word means 'to assign a numerical value to something'?",
+    "options": ["endorsement", "quantify", "recruiter", "leverage"],
+    "answer": "quantify"
+  },
+  {
+    "unit": "Unit 7",
+    "question": "Which word means 'to go well with or enhance the qualities of something'?",
+    "options": ["credibility", "complement", "highlight", "resume"],
+    "answer": "complement"
+  },
+  {
+    "unit": "Unit 7",
+    "question": "Which word means 'strong excitement or interest'?",
+    "options": ["recruiter", "endorsement", "enthusiasm", "cover letter"],
+    "answer": "enthusiasm"
+  },
+  {
+    "unit": "Unit 7",
+    "question": "Which word means 'to emphasize or make something stand out'?",
+    "options": ["networking", "highlight", "accomplishment", "credibility"],
+    "answer": "highlight"
+  },
+  {
+    "unit": "Unit 7",
+    "question": "Which word means 'someone who helps find and hire candidates for jobs'?",
+    "options": ["mentor", "colleague", "recruiter", "applicant"],
+    "answer": "recruiter"
+  },
+  {
+    "unit": "Unit 7",
+    "question": "Which word means 'a recommendation or public approval'?",
+    "options": ["endorsement", "leverage", "quantify", "highlight"],
+    "answer": "endorsement"
+  },
+  {
+    "unit": "Unit 7",
+    "question": "Which word means 'the quality of being believable or trustworthy'?",
+    "options": ["credibility", "complement", "highlight", "interview"],
+    "answer": "credibility"
+  },
+  {
+    "unit": "Unit 7",
+    "question": "Which word means 'the act of making professional connections'?",
+    "options": ["networking", "highlighting", "recruiting", "endorsing"],
+    "answer": "networking"
+  },
+  {
+    "unit": "Unit 7",
+    "question": "Which word means 'to use something to your advantage'?",
+    "options": ["quantify", "complement", "leverage", "network"],
+    "answer": "leverage"
+  },
+
+
+
+  {
+    "unit": "Unit 8",
+    "question": "What does 'obstacle' mean in a workplace context?",
+    "options": ["A helpful tool", "A motivation boost", "A difficulty or barrier", "A training course"],
+    "answer": "A difficulty or barrier"
+  },
+  {
+    "unit": "Unit 8",
+    "question": "A 'behavioral question' is typically asked to:",
+    "options": ["Check language fluency", "Test technical skills", "Understand past actions in specific situations", "Determine typing speed"],
+    "answer": "Understand past actions in specific situations"
+  },
+  {
+    "unit": "Unit 8",
+    "question": "The 'probation period' refers to:",
+    "options": ["Paid vacation", "A training session", "A trial period for new employees", "An annual event"],
+    "answer": "A trial period for new employees"
+  },
+  {
+    "unit": "Unit 8",
+    "question": "What is a 'performance review'?",
+    "options": ["A feedback session about work results", "A new employee interview", "A job application", "A training exam"],
+    "answer": "A feedback session about work results"
+  },
+  {
+    "unit": "Unit 8",
+    "question": "What does 'negotiation' involve?",
+    "options": ["Arriving late", "Making informal jokes", "Discussing to reach an agreement", "Avoiding responsibilities"],
+    "answer": "Discussing to reach an agreement"
+  },
+  {
+    "unit": "Unit 8",
+    "question": "To be 'on time' means to:",
+    "options": ["Arrive early", "Arrive late", "Arrive exactly at the expected time", "Cancel the meeting"],
+    "answer": "Arrive exactly at the expected time"
+  },
+  {
+    "unit": "Unit 8",
+    "question": "A 'user-centered' approach focuses on:",
+    "options": ["Developer experience", "Company revenue", "User needs and experience", "Marketing visuals"],
+    "answer": "User needs and experience"
+  },
+  {
+    "unit": "Unit 8",
+    "question": "The word 'collaboration' refers to:",
+    "options": ["Independent work", "Team conflict", "Working together with others", "Copying someone’s work"],
+    "answer": "Working together with others"
+  },
+  {
+    "unit": "Unit 8",
+    "question": "The phrase 'tight deadline' describes:",
+    "options": ["A flexible timeline", "A generous deadline", "A short and strict time limit", "A monthly routine"],
+    "answer": "A short and strict time limit"
+  },
+
+
+
+  {
+    "unit": "Unit 8",
+    "question": "Which word means 'something that blocks or hinders progress'?",
+    "options": ["probation", "collaboration", "obstacle", "deadline"],
+    "answer": "obstacle"
+  },
+  {
+    "unit": "Unit 8",
+    "question": "Which term refers to 'a question asking how someone acted in a past work situation'?",
+    "options": ["behavioral question", "performance review", "probation", "negotiation"],
+    "answer": "behavioral question"
+  },
+  {
+    "unit": "Unit 8",
+    "question": "Which term refers to 'a trial period when a new employee’s performance is evaluated'?",
+    "options": ["negotiation", "obstacle", "probation period", "user-centered"],
+    "answer": "probation period"
+  },
+  {
+    "unit": "Unit 8",
+    "question": "Which word means 'a meeting or report used to assess employee performance'?",
+    "options": ["collaboration", "performance review", "probation", "obstacle"],
+    "answer": "performance review"
+  },
+  {
+    "unit": "Unit 8",
+    "question": "Which word means 'discussion between two parties to reach agreement'?",
+    "options": ["deadline", "negotiation", "highlight", "networking"],
+    "answer": "negotiation"
+  },
+  {
+    "unit": "Unit 8",
+    "question": "Which word means 'arriving exactly at the expected or agreed time'?",
+    "options": ["flexible", "on time", "collaborative", "probation"],
+    "answer": "on time"
+  },
+  {
+    "unit": "Unit 8",
+    "question": "Which word describes 'a design or process that focuses on user needs'?",
+    "options": ["company-centered", "goal-oriented", "user-centered", "data-driven"],
+    "answer": "user-centered"
+  },
+  {
+    "unit": "Unit 8",
+    "question": "Which word means 'working together with others to achieve a goal'?",
+    "options": ["conflict", "collaboration", "presentation", "highlight"],
+    "answer": "collaboration"
+  },
+  {
+    "unit": "Unit 8",
+    "question": "Which phrase describes 'a short period of time to finish a task'?",
+    "options": ["extended break", "tight deadline", "onboarding", "flexible plan"],
+    "answer": "tight deadline"
+  },
+
+
+
+  {
+    "unit": "Unit 9",
+    "question": "What does the word 'counterpart' refer to?",
+    "options": ["An unrelated party", "Someone with similar role on the other side", "A beginner", "A supervisor"],
+    "answer": "Someone with similar role on the other side"
+  },
+  {
+    "unit": "Unit 9",
+    "question": "The word 'BATNA' refers to:",
+    "options": ["Best alternative if negotiation fails", "Main point of contact", "Initial price offer", "Final agreement"],
+    "answer": "Best alternative if negotiation fails"
+  },
+  {
+    "unit": "Unit 9",
+    "question": "What does 'bargaining' involve?",
+    "options": ["Ignoring offers", "Making and revising offers", "Hiring staff", "Setting up the location"],
+    "answer": "Making and revising offers"
+  },
+  {
+    "unit": "Unit 9",
+    "question": "The word 'concession' means:",
+    "options": ["Winning a debate", "Giving up something to reach agreement", "Asking for more", "Postponing a meeting"],
+    "answer": "Giving up something to reach agreement"
+  },
+  {
+    "unit": "Unit 9",
+    "question": "What does 'mutually beneficial' mean?",
+    "options": ["Unfair for one party", "Favorable for both parties", "Only good for clients", "Complicated and long"],
+    "answer": "Favorable for both parties"
+  },
+  {
+    "unit": "Unit 9",
+    "question": "The phrase 'win-win' refers to:",
+    "options": ["Both sides losing", "One side winning", "Both parties gaining", "Agreement not reached"],
+    "answer": "Both parties gaining"
+  },
+  {
+    "unit": "Unit 9",
+    "question": "To 'leverage' something in negotiation means to:",
+    "options": ["Use it as an advantage", "Avoid using it", "Hide information", "Give up quickly"],
+    "answer": "Use it as an advantage"
+  },
+  {
+    "unit": "Unit 9",
+    "question": "A 'trade-off' refers to:",
+    "options": ["A total win", "A short meeting", "Giving something up to gain another", "An accidental mistake"],
+    "answer": "Giving something up to gain another"
+  },
+  {
+    "unit": "Unit 9",
+    "question": "To 'close the deal' means to:",
+    "options": ["End discussions without results", "Finalize an agreement", "Start a new proposal", "Reject all offers"],
+    "answer": "Finalize an agreement"
+  },
+  {
+    "unit": "Unit 9",
+    "question": "The word 'rapport' refers to:",
+    "options": ["A detailed report", "A respectful distance", "A harmonious relationship", "A misunderstanding"],
+    "answer": "A harmonious relationship"
+  },
+
+
+  
+  {
+    "unit": "Unit 9",
+    "question": "Which word means 'a person or group that has a similar role on the other side of a negotiation'?",
+    "options": ["rapport", "concession", "counterpart", "trade-off"],
+    "answer": "counterpart"
+  },
+  {
+    "unit": "Unit 9",
+    "question": "Which acronym stands for 'the best option available if negotiation fails'?",
+    "options": ["KPI", "ROI", "BATNA", "MOU"],
+    "answer": "BATNA"
+  },
+  {
+    "unit": "Unit 9",
+    "question": "Which word means 'negotiating price or terms by making offers and changes'?",
+    "options": ["highlighting", "bargaining", "complementing", "closing"],
+    "answer": "bargaining"
+  },
+  {
+    "unit": "Unit 9",
+    "question": "Which word means 'something given up in order to reach agreement'?",
+    "options": ["benefit", "deadline", "concession", "rapport"],
+    "answer": "concession"
+  },
+  {
+    "unit": "Unit 9",
+    "question": "Which phrase means 'beneficial to both sides involved'?",
+    "options": ["mutually beneficial", "limited offer", "deadline-driven", "costly outcome"],
+    "answer": "mutually beneficial"
+  },
+  {
+    "unit": "Unit 9",
+    "question": "Which phrase refers to 'a situation where both parties gain something'?",
+    "options": ["concession", "win-win", "bargaining chip", "conflict"],
+    "answer": "win-win"
+  },
+  {
+    "unit": "Unit 9",
+    "question": "Which word means 'something used to gain an advantage in a negotiation'?",
+    "options": ["highlight", "leverage", "probation", "obstacle"],
+    "answer": "leverage"
+  },
+  {
+    "unit": "Unit 9",
+    "question": "Which word means 'a compromise where one thing is given up to gain another'?",
+    "options": ["agreement", "win-win", "trade-off", "obstacle"],
+    "answer": "trade-off"
+  },
+  {
+    "unit": "Unit 9",
+    "question": "Which phrase means 'to successfully reach an agreement'?",
+    "options": ["break the ice", "close the deal", "lose the edge", "burn the bridge"],
+    "answer": "close the deal"
+  },
+  {
+    "unit": "Unit 9",
+    "question": "Which word refers to 'a good and trusting relationship'?",
+    "options": ["rapport", "highlight", "bargain", "accomplishment"],
+    "answer": "rapport"
+  }
+ 
+]
