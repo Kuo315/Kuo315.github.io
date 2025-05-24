@@ -110,7 +110,7 @@
   <div id="result"></div>
 
   <script>
-    fetch('sentence.json')
+    fetch('./sentence.json')
       .then(response => response.json())
       .then(data => {
         const leftDiv = document.getElementById("left-options");
