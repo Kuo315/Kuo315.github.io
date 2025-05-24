@@ -145,7 +145,7 @@
 
     async function loadQuestions() {
       try {
-        const res = await fetch("questions/dialogue.json");
+        const res = await fetch('./dialogue.json');
         questions = await res.json();
         showQuestion();
       } catch (e) {
