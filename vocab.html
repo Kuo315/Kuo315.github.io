@@ -161,7 +161,7 @@
 
     async function loadAllQuestions() {
       try {
-        const res = await fetch('questions/vocab.json');
+        const res = await fetch('vocab.json');
         allQuestions = await res.json();
       } catch (e) {
         questionContainer.innerHTML = "<p style='color:red;'>Failed to load questions.</p>";
