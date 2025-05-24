@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>句型配對練習</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .container {
+      display: flex;
+      gap: 40px;
+    }
+    #left-options, #right-questions {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      flex: 1;
+      max-width: 45%;
+      height: 400px;
+      overflow-y: auto;
+    }
+    #left-options p {
+      background: #cce5ff;
+      margin: 8px 0;
+      padding: 8px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    #right-questions div {
+      margin-bottom: 12px;
+    }
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    select {
+      width: 100%;
+      padding: 6px;
+      font-size: 14px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    #submit-btn {
+      margin-top: 20px;
+      padding: 10px 18px;
+      background-color: #4a68ff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      user-select: none;
+    }
+    #submit-btn:hover:not(:disabled) {
+      background-color: #324dcc;
+    }
+    #submit-btn:disabled {
+      background-color: #999999;
+      cursor: not-allowed;
+    }
+    #result {
+      margin-top: 24px;
+      font-size: 16px;
+      line-height: 1.5;
+      white-space: pre-line;
+    }
+    .feedback-correct {
+      color: green;
+    }
+    .feedback-wrong {
+      color: red;
+      font-weight: 700;
+    }
+    #return-btn {
+      margin-top: 10px;
+      padding: 8px 16px;
+      font-size: 15px;
+      border-radius: 5px;
+      border: none;
+      background-color: #f0a500;
+      color: white;
+      cursor: pointer;
+      display: none;
+    }
+    #return-btn:hover {
+      background-color: #cc8300;
+    }
+  </style>
+</head>
+<body>
+  <h2>句型配對練習</h2>
+  <div class="container">
+    <div id="left-options">
+      <h3>選項（A~E）</h3>
+    </div>
+    <div id="right-questions">
+      <h3>題目（1~5）</h3>
+    </div>
+  </div>
+
+  <button id="submit-btn">提交答案</button>
+  <button id="return-btn">返回主畫面</button>
+
+  <div id="result"></div>
+
+  <script>
+    fetch("questions/sentence.json")
+      .then(response => response.json())
+      .then(data => {
+        const leftDiv = document.getElementById("left-options");
+        const rightDiv = document.getElementById("right-questions");
+        const submitBtn = document.getElementById("submit-btn");
+        const returnBtn = document.getElementById("return-btn");
+        const resultDiv = document.getElementById("result");
+
+        // 顯示左邊選項
+        data.leftSentences.forEach(opt => {
+          const p = document.createElement("p");
+          p.textContent = `${opt.id}. ${opt.text}`;
+          leftDiv.appendChild(p);
+        });
+
+        // 顯示右邊題目與選擇框
+        data.rightSentences.forEach(q => {
+          const div = document.createElement("div");
+          const label = document.createElement("label");
+          label.textContent = `${q.id}. ${q.text} 配對：`;
+
+          const select = document.createElement("select");
+          select.id = "select_" + q.id;
+
+          const defaultOption = document.createElement("option");
+          defaultOption.value = "";
+          defaultOption.textContent = "請選擇";
+          select.appendChild(defaultOption);
+
+          data.leftSentences.forEach(opt => {
+            const option = document.createElement("option");
+            option.value = opt.id;
+            option.textContent = opt.id;
+            select.appendChild(option);
+          });
+
+          label.appendChild(select);
+          div.appendChild(label);
+          rightDiv.appendChild(div);
+        });
+
+        submitBtn.onclick = () => {
+          let score = 0;
+          let total = data.rightSentences.length;
+          let feedbackHTML = [];
+          let wrongQuestions = [];
+
+          // 檢查是否有題目未作答
+          let unanswered = data.rightSentences.filter(q => {
+            const userAns = document.getElementById("select_" + q.id).value;
+            return userAns === "";
+          });
+
+          if (unanswered.length > 0) {
+            alert(`您還有 ${unanswered.length} 題尚未作答，請完成所有題目再提交！`);
+            return;
+          }
+
+          data.rightSentences.forEach(q => {
+            const userAns = document.getElementById("select_" + q.id).value;
+            const correctAns = data.answers[q.id];
+            if (userAns === correctAns) {
+              score++;
+              feedbackHTML.push(`<div class="feedback-correct">${q.id} 配對正確！</div>`);
+            } else {
+              feedbackHTML.push(`<div class="feedback-wrong">${q.id} 配對錯誤，正確答案是 ${correctAns}</div>`);
+              wrongQuestions.push({
+                question: q.text,
+                selected: userAns,
+                correct: correctAns,
+                category: "sentence"
+                });
+            }
+          });
+
+          // 儲存錯題（追加方式，儲存在 wrong_sentence）
+        let prev = JSON.parse(localStorage.getItem("wrong_sentence")) || [];
+        let combined = prev.concat(wrongQuestions);
+        localStorage.setItem("wrong_sentence", JSON.stringify(combined));
+
+
+          resultDiv.innerHTML = `
+            你答對了 ${score} / ${total} 題<br><br>
+            ${feedbackHTML.join('')}
+            <br><br>
+            <strong>本次錯題數量：${wrongQuestions.length}</strong>
+          `;
+
+          returnBtn.style.display = "inline-block";
+          submitBtn.disabled = true;
+        };
+
+        returnBtn.onclick = () => {
+          window.location.href = "index.html";
+        };
+      })
+      .catch(error => {
+        console.error("載入句子資料失敗:", error);
+        document.body.innerHTML = "<p>無法載入練習資料，請確認句子 JSON 路徑正確。</p>";
+      });
+  </script>
+</body>
+</html>

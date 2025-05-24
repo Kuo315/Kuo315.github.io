@@ -1,0 +1,47 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>English Practice Site</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* footer 固定在頁面底部 */
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      font-size: 1.2em;
+      color: #666;
+      border-top: 1px solid #ccc;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #f9f9f9;
+      box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+      user-select: none;
+    }
+
+    /* 為了不讓內容被footer蓋住，body底部要留空 */
+    body {
+      padding-bottom: 50px;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>English Practice Exercises</h1>
+  <div class="menu">
+    <a href="vocab.html" class="button">Vocabulary Matching</a>
+    <a href="dialogue.html" class="button">Dialogue Questions</a>
+    <a href="sentence.html" class="button">Sentence Matching</a>
+    <a href="review.html" class="button">Review Incorrect Answers</a>
+  </div>
+
+  <footer>
+    © 2025 ResumeVerify Lab - English Practice Platform
+  </footer>
+</body>
+</html>

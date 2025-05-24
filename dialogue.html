@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dialogue Practice</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px 30px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    #question-container p {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    #options {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .option-btn {
+      padding: 20px 25px;
+      font-size: 1.2em;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      background-color: #f9f9f9;
+      cursor: pointer;
+      transition: background-color 0.2s, transform 0.1s;
+      text-align: left;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .option-btn:hover {
+      background-color: #e6e6ff;
+      transform: scale(1.02);
+    }
+
+    .selected {
+      background-color: #dfe2ff !important;
+      border-color: #5c7cfa;
+    }
+
+    .correct {
+      background-color: #c8f7c5 !important;
+      font-weight: bold;
+    }
+
+    .incorrect {
+      background-color: #f7c5c5 !important;
+      font-weight: bold;
+    }
+
+    .result-item {
+      text-align: left;
+      margin: 25px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      line-height: 1.8;
+    }
+
+    #score {
+      margin-top: 30px;
+      font-weight: bold;
+      font-size: 1.2em;
+      text-align: center;
+      color: #222;
+    }
+
+    #next-btn {
+      display: block;
+      margin: 30px auto 10px;
+      padding: 10px 30px;
+      font-size: 1em;
+      background-color: #5c7cfa;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #next-btn:hover {
+      background-color: #4b6ede;
+    }
+
+    #return-btn {
+      display: none;
+      margin: 15px auto 0;
+      padding: 10px 30px;
+      font-size: 1em;
+      background-color: #5c7cfa;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #return-btn:hover {
+      background-color: #4b6ede;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Dialogue Practice</h1>
+    <div id="question-container"></div>
+    <button id="next-btn">Next</button>
+    <div id="score"></div>
+    <button id="return-btn">Back to Menu</button>
+  </div>
+
+  <script>
+    const questionContainer = document.getElementById("question-container");
+    const nextBtn = document.getElementById("next-btn");
+    const scoreDiv = document.getElementById("score");
+    const returnBtn = document.getElementById("return-btn");
+
+    let currentIndex = 0;
+    let userAnswers = [];
+    let questions = [];
+
+    async function loadQuestions() {
+      try {
+        const res = await fetch("questions/dialogue.json");
+        questions = await res.json();
+        showQuestion();
+      } catch (e) {
+        questionContainer.innerHTML = "<p style='color:red;'>Failed to load questions.</p>";
+      }
+    }
+
+    function showQuestion() {
+      const q = questions[currentIndex];
+      questionContainer.innerHTML = `
+        <p><strong>Q${currentIndex + 1}.</strong> ${q.question}</p>
+        <div id="options">
+          ${q.options.map((opt, idx) => `
+            <button class="option-btn" data-index="${idx}">${opt}</button>
+          `).join("")}
+        </div>
+      `;
+
+      const optionButtons = document.querySelectorAll(".option-btn");
+      optionButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          optionButtons.forEach((b) => b.classList.remove("selected"));
+          btn.classList.add("selected");
+          userAnswers[currentIndex] = btn.textContent;
+        });
+      });
+    }
+
+    nextBtn.addEventListener("click", () => {
+      if (!userAnswers[currentIndex]) {
+        alert("Please select an answer before continuing.");
+        return;
+      }
+
+      currentIndex++;
+
+      if (currentIndex < questions.length) {
+        showQuestion();
+      } else {
+        showResults();
+      }
+    });
+
+    function showResults() {
+    questionContainer.innerHTML = "<h2>Results</h2>";
+    let score = 0;
+    let wrongAnswers = [];
+
+    questions.forEach((q, idx) => {
+        const userAns = userAnswers[idx];
+        const correctAnsText = q.options[q.answer];
+
+        const result = document.createElement("div");
+        result.classList.add("result-item");
+        result.innerHTML = `
+        <p>
+            <strong>Q${idx + 1}:</strong> ${q.question}<br/>
+            Your answer: <span class="${userAns === correctAnsText ? 'correct' : 'incorrect'}">${userAns || 'No answer'}</span><br/>
+            ${userAns !== correctAnsText ? `Correct answer: <span class="correct">${correctAnsText}</span><br/>Explanation: ${q.explanation}` : ''}
+        </p>
+        `;
+
+        if (userAns === correctAnsText) {
+        score++;
+        } else {
+        wrongAnswers.push({
+            question: q.question,
+            selected: userAns || 'No answer',
+            correct: correctAnsText,
+            source: "dialogue" // ✅ 這裡加上來源標籤
+        });
+        }
+
+        questionContainer.appendChild(result);
+    });
+
+    scoreDiv.innerHTML = `<h3>You scored ${score} out of ${questions.length}</h3>`;
+    localStorage.setItem("wrong_dialogue", JSON.stringify(wrongAnswers));
+
+    nextBtn.style.display = "none";
+    returnBtn.style.display = "block";
+    }
+
+
+    returnBtn.addEventListener("click", () => {
+      window.location.href = "index.html";
+    });
+
+    loadQuestions();
+  </script>
+</body>
+</html>

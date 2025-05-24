@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English Practice Quiz</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header, footer { background: #004080; color: #fff; padding: 1em; text-align: center; }
+    .container { padding: 2em; max-width: 800px; margin: auto; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h1, h2 { color: #004080; }
+    .btn { background: #004080; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 1em; }
+    .btn:hover { background: #003060; }
+    .quiz-type { margin: 1em 0; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Business English Practice</h1>
+    <p>Unit 7: Resumes, Cover Letters, LinkedIn Profiles</p>
+  </header>
+  
+  <div class="container" id="main-menu">
+    <h2>Select a Quiz Type:</h2>
+    <div class="quiz-type">
+      <button class="btn" onclick="startQuiz('vocab')">Vocabulary Matching</button>
+      <button class="btn" onclick="startQuiz('dialogue')">Dialogue Completion</button>
+      <button class="btn" onclick="startQuiz('context')">Context Matching</button>
+    </div>
+  </div>
+
+  <div class="container hidden" id="quiz-section">
+    <h2 id="quiz-title"></h2>
+    <div id="quiz-content"></div>
+    <button class="btn" onclick="submitAnswers()">Submit</button>
+  </div>
+
+  <div class="container hidden" id="result-section">
+    <h2>Your Score</h2>
+    <p id="score"></p>
+    <button class="btn" onclick="goHome()">Back to Menu</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ResumeVerify Lab - English Practice Platform</p>
+  </footer>
+
+  <script>
+    const quizzes = {
+      vocab: {
+        title: 'Vocabulary Matching',
+        questions: [
+          { q: "accomplishment", a: "a result or achievement from effort" },
+          { q: "endorsement", a: "a public expression of support or approval" },
+          { q: "quantify", a: "to express something in numbers or amount" },
+          { q: "highlight", a: "to emphasize or make something stand out" }
+        ]
+      },
+      dialogue: {
+        title: 'Dialogue Completion',
+        questions: [
+          {
+            q: "Jane: I want to show my passion, but I don’t want to sound too informal.\nEthan: ___",
+            options: [
+              "Use emojis to express enthusiasm.",
+              "Use a professional tone, but let your enthusiasm shine through.",
+              "Keep it short and casual."
+            ],
+            answer: 1
+          },
+          {
+            q: "Ethan: Make sure your LinkedIn summary is concise and ___.",
+            options: [
+              "emotional",
+              "generic",
+              "highlights your strengths"
+            ],
+            answer: 2
+          }
+        ]
+      },
+      context: {
+        title: 'Context Matching',
+        questions: [
+          {
+            q: "I am particularly drawn to your company because of its commitment to ___.",
+            options: [
+              "salary transparency",
+              "innovation and employee development",
+              "remote policies"
+            ],
+            answer: 1
+          },
+          {
+            q: "My background in marketing has prepared me to ___.",
+            options: [
+              "travel frequently",
+              "excel in this role",
+              "quit my current job"
+            ],
+            answer: 1
+          }
+        ]
+      }
+    };
+
+    let currentQuiz = null;
+    let currentAnswers = [];
+
+    function startQuiz(type) {
+      document.getElementById('main-menu').classList.add('hidden');
+      document.getElementById('quiz-section').classList.remove('hidden');
+      const quiz = quizzes[type];
+      currentQuiz = quiz;
+      document.getElementById('quiz-title').textContent = quiz.title;
+      const content = document.getElementById('quiz-content');
+      content.innerHTML = '';
+      currentAnswers = [];
+
+      quiz.questions.forEach((q, idx) => {
+        const qDiv = document.createElement('div');
+        qDiv.style.marginBottom = '1em';
+        if (quiz.title === 'Vocabulary Matching') {
+          qDiv.innerHTML = `<strong>${q.q}</strong><br><input type="text" id="answer-${idx}" placeholder="Enter definition">`;
+        } else {
+          qDiv.innerHTML = `<strong>${q.q}</strong><br>` +
+            q.options.map((opt, i) => `<label><input type="radio" name="q${idx}" value="${i}"> ${opt}</label><br>`).join('');
+        }
+        content.appendChild(qDiv);
+      });
+    }
+
+    function submitAnswers() {
+      let score = 0;
+      currentQuiz.questions.forEach((q, idx) => {
+        if (currentQuiz.title === 'Vocabulary Matching') {
+          const userAnswer = document.getElementById(`answer-${idx}`).value.trim().toLowerCase();
+          const correct = q.a.trim().toLowerCase();
+          if (userAnswer.includes(correct.split(' ')[0])) score++;
+        } else {
+          const selected = document.querySelector(`input[name=q${idx}]:checked`);
+          if (selected && parseInt(selected.value) === q.answer) score++;
+        }
+      });
+
+      document.getElementById('quiz-section').classList.add('hidden');
+      document.getElementById('result-section').classList.remove('hidden');
+      document.getElementById('score').textContent = `You got ${score} out of ${currentQuiz.questions.length} correct.`;
+    }
+
+    function goHome() {
+      document.getElementById('result-section').classList.add('hidden');
+      document.getElementById('main-menu').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
