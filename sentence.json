@@ -1,0 +1,24 @@
+{
+    "leftSentences": [
+      {"id": "A", "text": "Good morning. My name is Thomas Lee from Global Tech Solutions. It's a pleasure to meet you."},
+      {"id": "B", "text": "Have you attended this conference before?"},
+      {"id": "C", "text": "Here's my business card. Please feel free to contact me."},
+      {"id": "D", "text": "I'd like to ask if you have any feedback on our proposal."},
+      {"id": "E", "text": "Could you please proofread this email before I send it to the client?"}
+    ],
+    "rightSentences": [
+      {"id": "1", "text": "Thank you. Here's mine as well."},
+      {"id": "2", "text": "Of course. I'll be glad to look it over for any errors."},
+      {"id": "3", "text": "Yes, I think we've covered everything on this topic."},
+      {"id": "4", "text": "Actually, this is my first time. I'm looking forward to all the sessions."},
+      {"id": "5", "text": "I work as the Regional Marketing Director, overseeing our campaigns across Asia."}
+    ],
+    "answers": {
+      "1": "A",
+      "2": "E",
+      "3": "D",
+      "4": "B",
+      "5": "C"
+    }
+  }
+  

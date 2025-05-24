@@ -1,0 +1,58 @@
+[
+    {
+      "question": "Which sentence would be appropriate to start a LinkedIn connection request?",
+      "options": [
+        "Can you fix my resume?",
+        "Hi, I came across your profile and was impressed by your experience.",
+        "Give me a job, please.",
+        "What's your salary?"
+      ],
+      "answer": 1,
+      "explanation": "A LinkedIn connection request should begin with a polite, professional tone and show genuine interest."
+    },
+    {
+      "question": "What would be the most polite way to ask for feedback on your resume?",
+      "options": [
+        "Please check my resume right now.",
+        "Tell me what’s wrong with my resume.",
+        "I would appreciate it if you could give me some feedback on my resume.",
+        "I need help ASAP."
+      ],
+      "answer": 2,
+      "explanation": "Using 'I would appreciate it if...' shows politeness and professionalism in your request."
+    },
+    {
+      "question": "Which of the following best expresses interest in a job opportunity?",
+      "options": [
+        "Is this job still available?",
+        "I'm kind of interested, I guess.",
+        "I'm writing to express my strong interest in the position you posted.",
+        "This looks cool, I want it."
+      ],
+      "answer": 2,
+      "explanation": "Formal expressions like 'I'm writing to express my strong interest...' are ideal in job-related emails or dialogues."
+    },
+    {
+      "question": "In a follow-up message, what is the best way to show appreciation?",
+      "options": [
+        "Why haven’t you answered me?",
+        "Thanks for ignoring me.",
+        "I just wanted to thank you again for your time and consideration.",
+        "I hope you respond soon."
+      ],
+      "answer": 2,
+      "explanation": "A polite follow-up should express gratitude, not impatience or sarcasm."
+    },
+    {
+      "question": "Which line is suitable for closing a professional dialogue?",
+      "options": [
+        "Catch you later!",
+        "Bye bye!",
+        "Looking forward to hearing from you.",
+        "Don’t forget me!"
+      ],
+      "answer": 2,
+      "explanation": "'Looking forward to hearing from you' is a standard professional closing that invites continued communication."
+    }
+  ]
+  
