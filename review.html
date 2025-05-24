@@ -1,131 +1,18 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>錯題回顧 Review</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background-color: #f4f4f4;
-    }
+<script>
+  const reviewContainer = document.getElementById("reviewContainer");
+  let sentenceMap = {};
 
-    h2 {
-      margin-bottom: 20px;
-    }
-
-    .review-item {
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 16px 16px 16px 120px;
-      margin-bottom: 16px;
-      text-align: left;
-      line-height: 1.8;
-      position: relative;
-      box-sizing: border-box;
-    }
-
-    /* 題型標籤 */
-    .source-label {
-      position: absolute;
-      top: 16px;
-      left: 16px;
-      background-color: #f0da4c;
-      color: white;
-      font-size: 12px;
-      font-weight: bold;
-      padding: 4px 8px;
-      border-radius: 6px;
-      text-transform: uppercase;
-      user-select: none;
-    }
-
-    .correct {
-      background-color: #c4f0c5;
-      padding: 2px 6px;
-      border-radius: 4px;
-    }
-
-    .incorrect {
-      background-color: #f7c6c7;
-      padding: 2px 6px;
-      border-radius: 4px;
-    }
-
-    .empty {
-      font-style: italic;
-      color: #666;
-    }
-
-    #backBtn {
-      display: inline-block;
-      margin-top: 24px;
-      padding: 10px 20px;
-      background-color: #4a68ff;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
-      text-decoration: none;
-    }
-
-    #backBtn:hover {
-      background-color: #324dcc;
-    }
-
-    .delete-btn {
-      position: absolute;
-      top: 16px;
-      right: 16px;
-      background-color: #ff4c4c;
-      border: none;
-      color: white;
-      padding: 6px 12px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 14px;
-      transition: background-color 0.3s;
-    }
-
-    .delete-btn:hover {
-      background-color: #cc3a3a;
-    }
-  </style>
-</head>
-<body>
-  <h2>錯題回顧 Review</h2>
-  <div id="reviewContainer"></div>
-  <a href="index.html" id="backBtn">返回主選單</a>
-
-  <script>
-    const reviewContainer = document.getElementById("reviewContainer");
-    let sentenceMap = {};
-
-    fetch("questions/sentence.json")
-        .then(response => response.json())
-        .then(data => {
-        data.leftSentences.forEach(item => {
-            sentenceMap[item.id] = item.text;
-        });
-
-    // 從 localStorage 撈出各題型錯題
+  function renderReview() {
     const vocabWrong = JSON.parse(localStorage.getItem("wrong_vocab")) || [];
     const dialogueWrong = JSON.parse(localStorage.getItem("wrong_dialogue")) || [];
     const sentenceWrong = JSON.parse(localStorage.getItem("wrong_sentence")) || []; 
-    // 如果你有其他題型，這邊也可繼續加
 
-    // 將題型資訊加進每題
     const vocabWrongWithSource = vocabWrong.map(item => ({...item, source: "Vocabulary"}));
     const dialogueWrongWithSource = dialogueWrong.map(item => ({...item, source: "Dialogue"}));
     const sentenceWrongWithSource = sentenceWrong.map(item => ({...item, source: "Sentence"}));
 
-    // 合併所有錯題
     let allWrongAnswers = [...vocabWrongWithSource, ...dialogueWrongWithSource,...sentenceWrongWithSource];
 
-    function renderReview() {
     reviewContainer.innerHTML = '';
 
     if (allWrongAnswers.length === 0) {
@@ -137,55 +24,58 @@
         const div = document.createElement("div");
         div.classList.add("review-item");
 
-        // 轉換句子題的 id 為完整句子
         let userAnswerFull = item.selected;
         let correctAnswerFull = item.correct;
         if (item.source === "Sentence") {
-        userAnswerFull = sentenceMap[item.selected] || item.selected || '未作答';
-        correctAnswerFull = sentenceMap[item.correct] || item.correct;
+          userAnswerFull = sentenceMap[item.selected] || item.selected || '未作答';
+          correctAnswerFull = sentenceMap[item.correct] || item.correct;
         }
 
         div.innerHTML = `
-        <div class="source-label">${item.source}</div>
-        <p><strong>Q${index + 1}:</strong> ${item.question}</p>
-        <p>Your answer: <span class="incorrect">${userAnswerFull}</span></p>
-        <p>Correct answer: <span class="correct">${correctAnswerFull}</span></p>
-        <button class="delete-btn" data-index="${index}">學會了，刪除</button>
+          <div class="source-label">${item.source}</div>
+          <p><strong>Q${index + 1}:</strong> ${item.question}</p>
+          <p>Your answer: <span class="incorrect">${userAnswerFull}</span></p>
+          <p>Correct answer: <span class="correct">${correctAnswerFull}</span></p>
+          <button class="delete-btn" data-index="${index}">學會了，刪除</button>
         `;
 
         reviewContainer.appendChild(div);
     });
 
-    // 綁定刪除事件同原本
-    const deleteButtons = document.querySelectorAll(".delete-btn");
-    deleteButtons.forEach(btn => {
+    // delete logic
+    document.querySelectorAll(".delete-btn").forEach(btn => {
         btn.addEventListener("click", () => {
-        const idx = Number(btn.getAttribute("data-index"));
-        const item = allWrongAnswers[idx];
+            const idx = Number(btn.getAttribute("data-index"));
+            const item = allWrongAnswers[idx];
+            allWrongAnswers.splice(idx, 1);
 
-        allWrongAnswers.splice(idx, 1);
+            const keyMap = {
+              "Vocabulary": "wrong_vocab",
+              "Dialogue": "wrong_dialogue",
+              "Sentence": "wrong_sentence"
+            };
 
-        if (item.source === "Vocabulary") {
-            const updated = JSON.parse(localStorage.getItem("wrong_vocab")) || [];
+            const storageKey = keyMap[item.source];
+            const updated = JSON.parse(localStorage.getItem(storageKey)) || [];
             const filtered = updated.filter(q => q.question !== item.question || q.selected !== item.selected);
-            localStorage.setItem("wrong_vocab", JSON.stringify(filtered));
-        } else if (item.source === "Dialogue") {
-            const updated = JSON.parse(localStorage.getItem("wrong_dialogue")) || [];
-            const filtered = updated.filter(q => q.question !== item.question || q.selected !== item.selected);
-            localStorage.setItem("wrong_dialogue", JSON.stringify(filtered));
-        } else if (item.source === "Sentence") {
-            const updated = JSON.parse(localStorage.getItem("wrong_sentence")) || [];
-            const filtered = updated.filter(q => q.question !== item.question || q.selected !== item.selected);
-            localStorage.setItem("wrong_sentence", JSON.stringify(filtered));
-        }
-
-        renderReview();
+            localStorage.setItem(storageKey, JSON.stringify(filtered));
+            renderReview();
         });
     });
-}
-renderReview();  // 呼叫一次顯示
-});
+  }
 
-  </script>
-</body>
-</html>
+  // 優雅處理 sentence.json 載入失敗的情況
+  fetch("questions/sentence.json")
+    .then(response => response.json())
+    .then(data => {
+      data.leftSentences.forEach(item => {
+        sentenceMap[item.id] = item.text;
+      });
+    })
+    .catch(err => {
+      console.warn("無法載入 sentence.json，句子題內容將以代號呈現", err);
+    })
+    .finally(() => {
+      renderReview();
+    });
+</script>
